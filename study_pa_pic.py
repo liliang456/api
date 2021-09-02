@@ -20,9 +20,10 @@ for li in list_li:
     title_detail = title.encode('iso-8859-1').decode('gbk')
     pic_data = requests.get(url=pic_url,headers=header).content
     pic_pat = 'pic/'+title_detail
-    with open(pic_pat,'wb') as fp:
-        fp.write(pic_data)
-        print(title_detail,'下载完成')
+    print(pic_pat)
+    # with open(pic_pat,'wb') as fp:
+    #     fp.write(pic_data)
+    #     print(title_detail,'下载完成')
 
 
 
